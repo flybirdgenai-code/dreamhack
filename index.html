@@ -28,7 +28,7 @@
     async function search(query) {
         try {
             await req(
-              `https://flybirdgenai-code.github.io/dreamhack/search?query=${query}`
+              `http://flybirdgenai-code.github.io/dreamhack/search?query=${query}`
             );
             return true;
         } catch (e) {
@@ -57,4 +57,5 @@
 </body>
 
 </html>
+
 
