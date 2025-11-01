@@ -17,7 +17,7 @@
             const iframe = document.getElementById("iframe");
             iframe.src = url;
             iframe.onload = () => { 
-                if (iframe.contentWindow.frames.length != 0)
+                if (iframe.contentWindow.frames.length == 1)
                     return resolve();
                 else
                     return reject();
@@ -57,3 +57,4 @@
 </body>
 
 </html>
+
